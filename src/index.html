@@ -148,12 +148,18 @@
           <div class="create__build-levels-nums">
             <span class="create__build-title">Количество уровней</span>
             <div class="create__build-levels-form">
-              <input id="one-level" type="radio" checked>
-              <label for="one-level">1 уровень</label>
-              <input id="two-level" type="radio">
-              <label for="two-level">2 уровень</label>
-              <input id="three-level" type="radio">
-              <label for="three-level">3 уровень</label>
+              <div class="create__build-wrapper">
+                <input id="one-level" name="level" class="create__build-levels-input" type="radio" checked>
+                <label for="one-level" data-info="level-1" class="create__build-label-level create__build-wrapper-label-radio">1 уровень</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input id="two-level" name="level" class="create__build-levels-input" type="radio">
+                <label for="two-level" data-info="level-2" class="create__build-label-level create__build-wrapper-label-radio">2 уровень</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input id="three-level" name="level" class="create__build-levels-input" type="radio">
+                <label for="three-level" data-info="level-3" class="create__build-label-level create__build-wrapper-label-radio">3 уровень</label>
+              </div>
             </div>
 
             <div class="create__build-description">
@@ -165,12 +171,18 @@
           <div class="create__build-levels-type">
             <span class="create__build-title">Форма уровней</span>
             <div class="create__build-levels-form">
-              <input id="circle-level" type="radio" checked>
-              <label for="circle-level">Круг</label>
-              <input id="square-level" type="radio">
-              <label for="square-level">Квадрат</label>
-              <input id="rectangle-level" type="radio">
-              <label for="rectangle-level">Прямоугольник</label>
+              <div class="create__build-wrapper">
+                <input id="circle-level" type="radio" name="form" checked>
+                <label for="circle-level" class="create__build-wrapper-label-radio">Круг</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input id="square-level" type="radio" name="form">
+                <label for="square-level" class="create__build-wrapper-label-radio">Квадрат</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input id="rectangle-level" type="radio" name="form">
+                <label for="rectangle-level" class="create__build-wrapper-label-radio">Прямоугольник</label>
+              </div>
             </div>
           </div>
         </div>
@@ -178,58 +190,58 @@
           <div class="create__build-form">
             <span class="create__build-title">Основа для 1 уровня</span>
             <div class="create__build-wrapper">
-              <input id="vanilla-build-1" type="radio" checked>
-              <label for="vanilla-build-1">Ванильный бисквит</label>
+              <input id="vanilla-build-1" type="radio" name="main-1" checked>
+              <label for="vanilla-build-1" class="create__build-wrapper-label-radio">Ванильный бисквит</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="chocolate-build-1" type="radio">
-              <label for="chocolate-build-1">Шоколадный бисквит</label>
+              <input id="chocolate-build-1" type="radio" name="main-1">
+              <label for="chocolate-build-1" class="create__build-wrapper-label-radio">Шоколадный бисквит</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="mram-build-1" type="radio">
-              <label for="mram-build-1">Мраморный бисквит</label>
+              <input id="mram-build-1" type="radio" name="main-1">
+              <label for="mram-build-1" class="create__build-wrapper-label-radio">Мраморный бисквит</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="honey-build-1" type="radio">
-              <label for="honey-build-1">Медовое бисквит</label>
+              <input id="honey-build-1" type="radio" name="main-1">
+              <label for="honey-build-1" class="create__build-wrapper-label-radio">Медовое бисквит</label>
             </div>
           </div>
           <div class="create__build-form">
             <span class="create__build-title">Основа для 2 уровня</span>
             <div class="create__build-wrapper">
-              <input id="vanilla-build-2" type="radio" checked>
-              <label for="vanilla-build-2">Ванильный бисквит</label>
+              <input id="vanilla-build-2" type="radio" name="main-2" checked>
+              <label for="vanilla-build-2" class="create__build-wrapper-label-radio">Ванильный бисквит</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="chocolate-build-2" type="radio">
-              <label for="chocolate-build-2">Шоколадный бисквит</label>
+              <input id="chocolate-build-2" type="radio" name="main-2">
+              <label for="chocolate-build-2" class="create__build-wrapper-label-radio">Шоколадный бисквит</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="mram-build-2" type="radio">
-              <label for="mram-build-2">Мраморный бисквит</label>
+              <input id="mram-build-2" type="radio" name="main-2">
+              <label for="mram-build-2" class="create__build-wrapper-label-radio">Мраморный бисквит</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="honey-build-2" type="radio">
-              <label for="honey-build-2">Медовое бисквит</label>
+              <input id="honey-build-2" type="radio" name="main-2">
+              <label for="honey-build-2" class="create__build-wrapper-label-radio">Медовое бисквит</label>
             </div>
           </div>
           <div class="create__build-form">
             <span class="create__build-title">Основа для 3 уровня</span>
             <div class="create__build-wrapper">
-              <input id="vanilla-build-3" type="radio" checked>
-              <label for="vanilla-build-3">Ванильный бисквит</label>
+              <input id="vanilla-build-3" type="radio" name="main-3" checked>
+              <label for="vanilla-build-3" class="create__build-wrapper-label-radio">Ванильный бисквит</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="chocolate-build-3" type="radio">
-              <label for="chocolate-build-3">Шоколадный бисквит</label>
+              <input id="chocolate-build-3" type="radio" name="main-3">
+              <label for="chocolate-build-3" class="create__build-wrapper-label-radio">Шоколадный бисквит</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="mram-build-3" type="radio">
-              <label for="mram-build-3">Мраморный бисквит</label>
+              <input id="mram-build-3" type="radio" name="main-3">
+              <label for="mram-build-3" class="create__build-wrapper-label-radio">Мраморный бисквит</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="honey-build-3" type="radio">
-              <label for="honey-build-3">Медовое бисквит</label>
+              <input id="honey-build-3" type="radio" name="main-3">
+              <label for="honey-build-3" class="create__build-wrapper-label-radio">Медовое бисквит</label>
             </div>
           </div>
         </div>
@@ -237,35 +249,35 @@
           <div class="create__build-cream-form">
             <span class="create__build-title">Крем для начинки</span>
             <div class="create__build-wrapper">
-              <input id="white-cream-coating" type="radio" checked>
-              <label for="white-cream-coating">Белый крем</label>
+              <input id="white-cream-coating" type="radio" name="cream" checked>
+              <label for="white-cream-coating" class="create__build-wrapper-label-radio">Белый крем</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="chocolite-cream-coating" type="radio">
-              <label for="chocolite-cream-coating">Шоколадный крем</label>
+              <input id="chocolite-cream-coating" type="radio" name="cream">
+              <label for="chocolite-cream-coating" class="create__build-wrapper-label-radio">Шоколадный крем</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="chees-cream-coating" type="radio">
-              <label for="chees-cream-coating">Крем чиз</label>
+              <input id="chees-cream-coating" type="radio" name="cream">
+              <label for="chees-cream-coating" class="create__build-wrapper-label-radio">Крем чиз</label>
             </div>
           </div>
           <div class="create__build-cream-form">
             <span class="create__build-title">Крем для покрытия</span>
             <div class="create__build-wrapper">
-              <input id="with-out" type="radio" checked>
-              <label for="with-out">Без покрытия</label>
+              <input id="with-out" type="radio" name="cream-coating" checked>
+              <label for="with-out" class="create__build-wrapper-label-radio">Без покрытия</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="white-cream" type="radio">
-              <label for="white-cream">Белый крем</label>
+              <input id="white-cream" type="radio" name="cream-coating">
+              <label for="white-cream" class="create__build-wrapper-label-radio">Белый крем</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="chocolite-cream" type="radio">
-              <label for="chocolite-cream">Шоколадный крем</label>
+              <input id="chocolite-cream" type="radio" name="cream-coating">
+              <label for="chocolite-cream" class="create__build-wrapper-label-radio">Шоколадный крем</label>
             </div>
             <div class="create__build-wrapper">
-              <input id="chees-cream" type="radio">
-              <label for="chees-cream">Крем чиз</label>
+              <input id="chees-cream" type="radio" name="cream-coating">
+              <label for="chees-cream" class="create__build-wrapper-label-radio">Крем чиз</label>
             </div>
           </div>
         </div>
@@ -273,32 +285,32 @@
           <span class="create__build-title">Топпинг</span>
           <div class="create__build-topping-info">
             <div class="create__build-wrapper">
-              <input type="radio" id="with-out-topping" checked>
-              <label for="with-out-topping">Без топпинга</label>
+              <input type="radio" id="with-out-topping" name="topping" checked>
+              <label for="with-out-topping" class="create__build-wrapper-label-radio">Без топпинга</label>
             </div>
             <div class="create__build-wrapper">
-              <input type="radio" id="white-souce">
-              <label for="white-souce">Белый соус</label>
+              <input type="radio" id="white-souce" name="topping">
+              <label for="white-souce" class="create__build-wrapper-label-radio">Белый соус</label>
             </div>
             <div class="create__build-wrapper">
-              <input type="radio" id="caramel">
-              <label for="caramel">Карамельный сироп</label>
+              <input type="radio" id="caramel" name="topping">
+              <label for="caramel" class="create__build-wrapper-label-radio">Карамельный сироп</label>
             </div>
             <div class="create__build-wrapper">
-              <input type="radio" id="maple">
-              <label for="maple">Кленовый сироп</label>
+              <input type="radio" id="maple" name="topping">
+              <label for="maple" class="create__build-wrapper-label-radio">Кленовый сироп</label>
             </div>
             <div class="create__build-wrapper">
-              <input type="radio" id="strawberry">
-              <label for="strawberry">Клубничный сироп</label>
+              <input type="radio" id="strawberry" name="topping">
+              <label for="strawberry" class="create__build-wrapper-label-radio">Клубничный сироп</label>
             </div>
             <div class="create__build-wrapper">
-              <input type="radio" id="blueberry">
-              <label for="blueberry">Черничный сироп</label>
+              <input type="radio" id="blueberry" name="topping">
+              <label for="blueberry" class="create__build-wrapper-label-radio">Черничный сироп</label>
             </div>
             <div class="create__build-wrapper">
-              <input type="radio" id="milk-choc">
-              <label for="milk-choc">Молочный шоколад</label>
+              <input type="radio" id="milk-choc" name="topping">
+              <label for="milk-choc" class="create__build-wrapper-label-radio">Молочный шоколад</label>
             </div>
           </div>
         </div>
@@ -379,6 +391,39 @@
           </div>
           <div class="create__build-end-right">
             <span class="create__build-title">Ваш торт будет выглядеть так</span>
+          
+            <div id="cake" class="create__build-end-cake">
+              <ul class="create__build-end-cake-level-list">
+                <li data-level="level-3" class="create__build-end-cake-level block-hidden">
+                  <div class="topping-res block-hidden"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level"></div>
+                </li>
+                <li data-level="level-2" class="create__build-end-cake-level block-hidden">
+                  <div class="topping-res block-hidden"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level"></div>
+                </li>
+                <li data-level="level-1" class="create__build-end-cake-level">
+                  <div class="topping-res block-hidden"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level"></div>
+                </li>
+              </ul>
+              <div class="create__build-end-cake-plate"></div>
+            </div>
           </div>
         </div>
         <div class="create__build-res">

@@ -171,41 +171,41 @@
       display: flex
       align-items: center
 
+      & input[type="radio"]
+        display: none
+
       & label
         font-size: 24px
         cursor: pointer
-        margin-left: 5px
+        position: relative
+        display: inline-block
+        padding-left: 30px
 
-      & input
-        &[type="radio"]
-          width: 20px
-          height: 20px
-          cursor: pointer
+        &.create__build-wrapper-label-radio
+          &:before
+            content: ""
+            display: inline-block
+            width: 20px
+            height: 20px
+            position: absolute
+            border-radius: 50%
+            border: 2px solid #fff
+            left: 0
+            bottom: 5px
+            background: none
+            transition: background-color, .2s ease
 
-          &:not(:first-child)
-            margin-left: 15px
-
-        &[type="checkbox"]
-          width: 20px
-          height: 20px
-          cursor: pointer
+      & input[type="radio"]:checked + label:before
+        background-color: #ee707a
 
     &-levels
       display: flex
       align-items: flex-start
 
       &-form
-        & label
-          font-size: 24px
-          cursor: pointer
-          margin-left: 5px
+        display: flex
 
-        & input[type="radio"]
-          width: 20px
-          height: 20px
-          cursor: pointer
-          align-items: center
-
+        & .create__build-wrapper
           &:not(:first-child)
             margin-left: 15px
 
@@ -325,3 +325,70 @@
 
   &-description
     margin-top: 5px
+
+#cake
+  width: 430px
+
+.create__build-end
+  height: 450px
+
+  &-right
+    height: 100%
+    width: 100%
+    position: relative
+
+    & .create__build-title
+      text-align: center
+    
+  &-cake
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, 0)
+
+    &-level-list
+      flex-direction: column
+
+      & li
+        margin: 0 auto
+        width: 100%
+        height: 90px
+        border-radius: 30px 30px 0 0
+        background-color: #613A19
+
+        & div
+          width: 100%
+
+        &:nth-child(3)
+          width: 380px
+
+        &:nth-child(2)
+          width: 300px
+        
+        &:nth-child(1)
+          width: 200px
+
+    &-plate
+      width: 100%
+      height: 20px
+      background-color: #60AEC4
+      border-radius: 30px
+
+.cream-level
+  background-color: #FFFFFF
+  height: 10px
+
+  &:first-child
+    border-radius: 30px 30px 0 0
+    height: 20px
+
+.main-level
+  background-color: #BDA185
+  height: 20px
+
+.topping-res
+  width: 100%
+  height: 20px
+  background-color: #fff
+  border-radius: 30px 30px 0 0
+  z-index: 99
