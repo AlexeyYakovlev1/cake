@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+  <title>Конструктор тортов</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__left">
+        <menu class="header__menu">
+          <ul class="header__menu-list">
+            <li>
+              <a href="#">Заказать готовый торт</a>
+            </li>
+            <li>
+              <a href="#build-cake">Собрать свой торт</a>
+            </li>
+            <li>
+              <a href="#">Наши кафе</a>
+            </li>
+          </ul>
+        </menu>
+        <a href="/" class="header__logo">
+          <img src="http://www.ilovecake.ru/front/assets/images/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="header__info">
+        <ul class="header__info-connect-list">
+          <li>
+            <a href="">
+              <svg id="instagram" viewBox="0 0 64 64" fill="#5bb3d2" width="35px">
+                <path d="M 0 16 Q 0 0 16 0 H 48 Q 64 0 64 16 V 48 Q 64 64 48 64 H 16 Q 0 64 0 48 Z M 32 16 A 16 16 0 0 0 32 48 A 16 16 0 0 0 32 16 Z M 32 21 A 11 11 0 1 1 32 43 A 10 10 0 1 1 32 21 Z M 50 10 A 4 4 0 0 0 50 18 A 4 4 0 0 0 50 10 Z"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg id="facebook" viewBox="0 0 64 64" fill="#5bb3d2" width="35px">
+                <path d="M 0 16 Q 0 0 16 0 H 48 Q 64 0 64 16 V 48 Q 64 64 48 64 H 16 Q 0 64 0 48 Z M 40 64 V 40 H 48 L 49 30 H 40 V 24 Q 40 20 44 20 H 50 V 13 Q 32 9 32 22 V 30 H 24 V 40 H 32 V 64 Z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="header__info-tel" href="tel:+79263713629">+7 926 371-36-29</a>
+        <div class="header__info-work">
+          <p>с 8:00 до 23:00</p>
+          <span>
+            <a href="">WhatsApp</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="welcome">
+    <div class="container">
+      <div class="welcome__info">
+        <div class="welcome__info-description">
+          <h1>На нашем сайте вы можете собрать свой авторский торт!</h1>
+          <button class="done-btn">
+            <a href="#build-cake">Собрать торт</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="conditions">
+    <div class="container">
+      <div class="conditions__header">
+        <h2 class="conditions-title title">Условия заказа</h2>
+      </div>
+      <ul class="conditions__info-list">
+        <li>
+          <img src="./src/assets/images/chronometer.png" alt="time">
+          <span class="conditions__info-list-title">24 часа</span>
+          <small class="conditions__info-list-subtitle">срок изготовления торта</small>
+          <p class="conditions__info-list-description">
+            Срочный заказ (менее 24 часов) увеличивает стоимость на 20%
+          </p>
+        </li>
+        <li>
+          <img src="./src/assets/images/payment.png" alt="payment">
+          <span class="conditions__info-list-title">предоплата</span>
+          <small class="conditions__info-list-subtitle">50% от стоимости</small>
+          <p class="conditions__info-list-description">
+            Вы можете сделать предоплату в любом из наших ресторанов, по указанным адресам
+          </p>
+        </li>
+        <li>
+          <img src="./src/assets/images/delivery-truck.png" alt="delivery">
+          <span class="conditions__info-list-title">доставка</span>
+          <small class="conditions__info-list-subtitle">в рестораны</small>
+          <p class="conditions__info-list-description">
+            Готовый заказ можно забрать в наших ресторанах Americano и Favorite Cake с 10:00 до 23:00
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="location">
+    <div class="container">
+      <ul class="location__list">
+        <li>
+          <h4 class="location__list-title">Americano ТЦ «Океания»</h4>
+          <div class="location__list-description">
+            <p>г. Москва, Кутузовский пр-т, 57</p>
+            <p>ст. м. «Славянский бульвар»</p>
+            <p><a href="tel:+79266634671">+7 926 663-46-71</a>, с 8:00 до 23:00</p>
+            <a href="#">Смотреть на Яндекс.Картах</a>
+          </div>
+        </li>
+        <li>
+          <h4 class="location__list-title">Americano «Козихинский»</h4>
+          <div class="location__list-description">
+            <p>г. Москва, Б. Козихинский переулок, 18/8</p>
+            <p>ст. м. «Пушкинская», «Тверская»</p>
+            <p><a href="tel:+79169367852">+7 916 936-78-52</a>, с 8:00 до 23:00</p>
+            <a href="#">Смотреть на Яндекс.Картах</a>
+          </div>
+        </li>
+        <li>
+          <h4 class="location__list-title">Favorite Cake</h4>
+          <div class="location__list-description">
+            <p>г. Москва, Никитский бульвар, 14</p>
+            <p>ст. м. «Александровский сад», «Арбатская»</p>
+            <p><a href="tel:+79263713629">+7 926 371-36-29</a>, с 8:00 до 23:00</p>
+            <a href="#">Смотреть на Яндекс.Картах</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="create" id="build-cake">
+    <div class="container">
+      <div class="create__header">
+        <h1 class="create-title title">Создай свой торт</h1>
+      </div>
+      <form class="create__build" action="/">
+        <div class="create__build-levels">
+          <div class="create__build-levels-nums">
+            <span class="create__build-title">Количество уровней</span>
+            <div class="create__build-levels-form">
+              <div class="create__build-wrapper">
+                <input id="one-level" name="level" class="create__build-levels-input" type="radio" checked>
+                <label for="one-level" data-info="level-1" class="create__build-label-level create__build-wrapper-label-radio">1 уровень</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input id="two-level" name="level" class="create__build-levels-input" type="radio">
+                <label for="two-level" data-info="level-2" class="create__build-label-level create__build-wrapper-label-radio">2 уровень</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input id="three-level" name="level" class="create__build-levels-input" type="radio">
+                <label for="three-level" data-info="level-3" class="create__build-label-level create__build-wrapper-label-radio">3 уровень</label>
+              </div>
+            </div>
+
+            <div class="create__build-description">
+              <p>Круг: 1 уровень — 28 см, 2 уровень — 24 см, 3 уровень — 20 см</p>
+              <p>Квадрат: 1 уровень — 25×25 см, 2 уровень — 20×20 см, 3 уровень — 15×15 см</p>
+              <p>Прямоугольник: 1 уровень — 40×30 см, 2 уровень — 35×25 см, 3 уровень — 30×20 см</p>
+            </div>
+          </div>
+          <div class="create__build-levels-type">
+            <span class="create__build-title">Форма уровней</span>
+            <div class="create__build-levels-form">
+              <div class="create__build-wrapper">
+                <input id="circle-level" type="radio" name="form" checked>
+                <label for="circle-level" class="create__build-wrapper-label-radio">Круг</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input id="square-level" type="radio" name="form">
+                <label for="square-level" class="create__build-wrapper-label-radio">Квадрат</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input id="rectangle-level" type="radio" name="form">
+                <label for="rectangle-level" class="create__build-wrapper-label-radio">Прямоугольник</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="create__build-main">
+          <div class="create__build-form">
+            <span class="create__build-title">Основа для 1 уровня</span>
+            <div class="create__build-wrapper">
+              <input id="vanilla-build-1" type="radio" name="main-1" checked>
+              <label for="vanilla-build-1" data-main="vanilla-build-1" class="create__build-label-main create__build-wrapper-label-radio">Ванильный бисквит</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="chocolate-build-1" type="radio" name="main-1">
+              <label for="chocolate-build-1" data-main="chocolate-build-1" class="create__build-label-main create__build-wrapper-label-radio">Шоколадный бисквит</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="mram-build-1" type="radio" name="main-1">
+              <label for="mram-build-1" data-main="mram-build-1" class="create__build-label-main create__build-wrapper-label-radio">Мраморный бисквит</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="honey-build-1" type="radio" name="main-1">
+              <label for="honey-build-1" data-main="honey-build-1" class="create__build-label-main create__build-wrapper-label-radio">Медовое бисквит</label>
+            </div>
+          </div>
+          <div class="create__build-form">
+            <span class="create__build-title">Основа для 2 уровня</span>
+            <div class="create__build-wrapper">
+              <input id="vanilla-build-2" type="radio" name="main-2" checked>
+              <label for="vanilla-build-2" data-main="vanilla-build-2" class="create__build-label-main create__build-wrapper-label-radio">Ванильный бисквит</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="chocolate-build-2" type="radio" name="main-2">
+              <label for="chocolate-build-2" data-main="chocolate-build-2" class="create__build-label-main create__build-wrapper-label-radio">Шоколадный бисквит</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="mram-build-2" type="radio" name="main-2">
+              <label for="mram-build-2" data-main="mram-build-2" class="create__build-label-main create__build-wrapper-label-radio">Мраморный бисквит</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="honey-build-2" type="radio" name="main-2">
+              <label for="honey-build-2" data-main="honey-build-2" class="create__build-label-main create__build-wrapper-label-radio">Медовое бисквит</label>
+            </div>
+          </div>
+          <div class="create__build-form">
+            <span class="create__build-title">Основа для 3 уровня</span>
+            <div class="create__build-wrapper">
+              <input id="vanilla-build-3" type="radio" name="main-3" checked>
+              <label for="vanilla-build-3" data-main="vanilla-build-3" class="create__build-label-main create__build-wrapper-label-radio">Ванильный бисквит</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="chocolate-build-3" type="radio" name="main-3">
+              <label for="chocolate-build-3" data-main="chocolate-build-3" class="create__build-label-main create__build-wrapper-label-radio">Шоколадный бисквит</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="mram-build-3" type="radio" name="main-3">
+              <label for="mram-build-3" data-main="mram-build-3" class="create__build-label-main create__build-wrapper-label-radio">Мраморный бисквит</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="honey-build-3" type="radio" name="main-3">
+              <label for="honey-build-3" data-main="honey-build-3" class="create__build-label-main create__build-wrapper-label-radio">Медовое бисквит</label>
+            </div>
+          </div>
+        </div>
+        <div class="create__build-cream">
+          <div class="create__build-cream-form">
+            <span class="create__build-title">Крем для начинки</span>
+            <div class="create__build-wrapper">
+              <input id="white-cream" type="radio" name="cream" checked>
+              <label for="white-cream" data-cream="white-cream" class="create__build-label-cream create__build-wrapper-label-radio">Белый крем</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="chocolite-cream" type="radio" name="cream">
+              <label for="chocolite-cream" data-cream="chocolite-cream" class="create__build-label-cream create__build-wrapper-label-radio">Шоколадный крем</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="chees-cream" type="radio" name="cream">
+              <label for="chees-cream" data-cream="chees-cream" class="create__build-label-cream create__build-wrapper-label-radio">Крем чиз</label>
+            </div>
+          </div>
+          <div class="create__build-cream-form">
+            <span class="create__build-title">Крем для покрытия</span>
+            <div class="create__build-wrapper">
+              <input id="with-out" type="radio" name="cream-coating" checked>
+              <label for="with-out" data-cream="with-out-coating" class="create__build-label-cream-coating create__build-wrapper-label-radio">Без покрытия</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="white-cream-coating" type="radio" name="cream-coating">
+              <label for="white-cream-coating" data-cream="white-cream-coating" class="create__build-label-cream-coating create__build-wrapper-label-radio">Белый крем</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="chocolite-cream-coating" type="radio" name="cream-coating">
+              <label for="chocolite-cream-coating" data-cream="chocolite-cream-coating" class="create__build-label-cream-coating create__build-wrapper-label-radio">Шоколадный крем</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input id="chees-cream-coating" type="radio" name="cream-coating">
+              <label for="chees-cream-coating" data-cream="chees-cream-coating" class="create__build-label-cream-coating create__build-wrapper-label-radio">Крем чиз</label>
+            </div>
+          </div>
+        </div>
+        <div class="create__build-topping">
+          <span class="create__build-title">Топпинг</span>
+          <div class="create__build-topping-info">
+            <div class="create__build-wrapper">
+              <input type="radio" id="with-out-topping" name="topping" checked>
+              <label for="with-out-topping" data-topping="with-out-topping" class="create__build-label-topping create__build-wrapper-label-radio">Без топпинга</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input type="radio" id="white-souce" name="topping">
+              <label for="white-souce" data-topping="white-souce" class="create__build-label-topping create__build-wrapper-label-radio">Белый соус</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input type="radio" id="caramel" name="topping">
+              <label for="caramel" data-topping="caramel" class="create__build-label-topping create__build-wrapper-label-radio">Карамельный сироп</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input type="radio" id="maple" name="topping">
+              <label for="maple" data-topping="maple" class="create__build-label-topping create__build-wrapper-label-radio">Кленовый сироп</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input type="radio" id="strawberry" name="topping">
+              <label for="strawberry" data-topping="strawberry" class="create__build-label-topping create__build-wrapper-label-radio">Клубничный сироп</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input type="radio" id="blueberry" name="topping">
+              <label for="blueberry" data-topping="blueberry" class="create__build-label-topping create__build-wrapper-label-radio">Черничный сироп</label>
+            </div>
+            <div class="create__build-wrapper">
+              <input type="radio" id="milk-choc" name="topping">
+              <label for="milk-choc" data-topping="milk-choc" class="create__build-label-topping create__build-wrapper-label-radio">Молочный шоколад</label>
+            </div>
+          </div>
+        </div>
+        <div class="create__build-view">
+          <div class="create__build-view-form">
+            <span class="create__build-title">Ягоды</span>
+            <div class="create__build-view-info">
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="blackberries">
+                <label for="blackberries">Ежевика</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="blueberries">
+                <label for="blueberries">Голубика</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="raspberries">
+                <label for="raspberries">Малина</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="strawberries">
+                <label for="strawberries">Клубника</label>
+              </div>
+            </div>
+          </div>
+          <div class="create__build-view-form">
+            <span class="create__build-title">Декор</span>
+            <div class="create__build-view-info">
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="meringue">
+                <label for="meringue">Безе</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="marshmellow">
+                <label for="marshmellow">Маршмелоу</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="shavings">
+                <label for="shavings">Шоколадная стружка</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="cookies">
+                <label for="cookies">Фигурное печенье</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="pecan">
+                <label for="pecan">Пекан</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="pistachios">
+                <label for="pistachios">Фисташки</label>
+              </div>
+              <div class="create__build-wrapper">
+                <input type="checkbox" id="hazelnut">
+                <label for="hazelnut">Фундук</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="create__build-end">
+          <div class="create__build-end-left">
+            <div class="create__build-end-left-top">
+              <span class="create__build-title">Надпись</span>
+              <p class="create__build-end-description">
+                Мы можем разместить на торте любую
+                надпись, например: «С днем рождения!»
+              </p>
+              <input class="create__build-end-input-text" type="text">
+            </div>
+            <div class="create__build-end-left-down">
+              <span class="create__build-title">Комментарий</span>
+              <p class="create__build-end-description">
+                Дополнительные пожелания
+                по украшению, начинке, декору и пр.
+              </p>
+              <textarea class="create__build-end-input-text" name="" id="" cols="50" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="create__build-end-right">
+            <span class="create__build-title">Ваш торт будет выглядеть так</span>
+          
+            <div id="cake" class="create__build-end-cake">
+              <ul class="create__build-end-cake-level-list">
+                <li data-level="level-3" class="create__build-end-cake-level block-hidden">
+                  <div class="topping-res"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level" data-level="3"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level" data-level="3"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level" data-level="3"></div>
+                </li>
+                <li data-level="level-2" class="create__build-end-cake-level block-hidden">
+                  <div class="topping-res"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level" data-level="2"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level" data-level="2"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level" data-level="2"></div>
+                </li>
+                <li data-level="level-1" class="create__build-end-cake-level">
+                  <div class="topping-res"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level" data-level="1"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level" data-level="1"></div>
+                  <div class="cream-level"></div>
+                  <div class="main-level" data-level="1"></div>
+                </li>
+              </ul>
+              <div class="create__build-end-cake-plate"></div>
+            </div>
+          </div>
+        </div>
+        <div class="create__build-res">
+          <p class="create__build-res-info create__build-end-description">
+            Пожалуйста, заполните форму и наш менеджер свяжется с вами для согласования стоимости
+          </p>
+          <div class="create__build-res-item">
+            <label for="name">Ваше имя:</label>
+            <input class="create__build-end-input-text" type="text" name="name" id="name">
+          </div>
+          <div class="create__build-res-item">
+            <label for="email">Эл. почта:</label>
+            <input class="create__build-end-input-text" type="email" name="email" id="email">
+          </div>
+          <div class="create__build-res-item">
+            <label for="phone">Телефон:</label>
+            <input class="create__build-end-input-text" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__" value="+7 (___) ___-__-__">
+          </div>
+          <div class="create__build-res-item">
+            <label for="date">Дата получения:</label>
+            <input class="create__build-end-input-text" type="date" name="date" id="date" placeholder="__.__.____" value="__.__.____">
+          </div>
+          <div class="create__build-res-item">
+            <label for="code">Промо-код:</label>
+            <input class="create__build-end-input-text" type="text" name="code" id="code">
+          </div>
+
+          <input class="done-btn" type="submit" value="Отправить">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <img class="footer-logo" src="http://www.ilovecake.ru/front/assets/images/logo-local-band.png" alt="restaurant">
+      <div class="footer__connect">
+        <a href="">
+          <svg id="instagram" viewBox="0 0 64 64" fill="#000000" width="35px">
+            <path d="M 0 16 Q 0 0 16 0 H 48 Q 64 0 64 16 V 48 Q 64 64 48 64 H 16 Q 0 64 0 48 Z M 32 16 A 16 16 0 0 0 32 48 A 16 16 0 0 0 32 16 Z M 32 21 A 11 11 0 1 1 32 43 A 10 10 0 1 1 32 21 Z M 50 10 A 4 4 0 0 0 50 18 A 4 4 0 0 0 50 10 Z"></path>
+          </svg>
+        </a>
+        <a href="#">
+          <svg id="facebook" viewBox="0 0 64 64" fill="#000000" width="35px">
+            <path d="M 0 16 Q 0 0 16 0 H 48 Q 64 0 64 16 V 48 Q 64 64 48 64 H 16 Q 0 64 0 48 Z M 40 64 V 40 H 48 L 49 30 H 40 V 24 Q 40 20 44 20 H 50 V 13 Q 32 9 32 22 V 30 H 24 V 40 H 32 V 64 Z"></path>
+          </svg>
+        </a>
+      </div>
+      <p class="footer-description">
+        © 2016–2021 Local Band. Все права защищены.
+      </p>
+    </div>
+  </footer>
+<script src="bundle.js"></script></body>
+</html>
