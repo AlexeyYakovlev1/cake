@@ -198,6 +198,10 @@
       & input[type="radio"]:checked + label:before
         background-color: #ee707a
 
+      & input[type="checkbox"]
+        width: 20px
+        height: 20px
+
     &-levels
       display: flex
       align-items: flex-start
@@ -339,12 +343,12 @@
 
     & .create__build-title
       text-align: center
-    
+
   &-cake
     position: absolute
     bottom: 0
     left: 50%
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 10%)
 
     &-level-list
       flex-direction: column
@@ -355,6 +359,10 @@
         height: 90px
         border-radius: 30px 30px 0 0
         background-color: #613A19
+        position: relative
+
+        &:not(:last-child)
+          margin-bottom: 20px
 
         & div
           width: 100%
@@ -364,7 +372,7 @@
 
         &:nth-child(2)
           width: 300px
-        
+
         &:nth-child(1)
           width: 200px
 
@@ -378,10 +386,6 @@
   background-color: #FFFFFF
   height: 10px
 
-  &:first-child
-    border-radius: 30px 30px 0 0
-    height: 20px
-
 .main-level
   background-color: #BDA185
   height: 20px
@@ -390,5 +394,95 @@
   width: 100%
   height: 20px
   background-color: #fff
+  z-index: 999
+  position: absolute
+  top: -20px
+  left: 0
   border-radius: 30px 30px 0 0
+
+.chocolate-build
+  background-color: #603817
+
+.mram-build
+  background-color: #A68C72
+
+.honey-build
+  background-color: #D09A6E
+
+.vanilla-build
+  background-color: #BCA187
+
+.with-out-coating
+  background: none
+
+.chocolite-cream-coating
   z-index: 99
+  position: relative
+
+  &:before
+    position: absolute
+    content: ''
+    height: 118%
+    width: 100%
+    background-color: #603817 !important
+    top: -20px
+    left: 0
+    border-radius: 20px 20px 0 0
+
+.chocolite-cream
+  background-color: #603817 !important
+
+.white-cream-coating
+  z-index: 99
+  position: relative
+
+  &:before
+    position: absolute
+    content: ''
+    height: 118%
+    width: 100%
+    background-color: #fff !important
+    top: -20px
+    left: 0
+    border-radius: 20px 20px 0 0
+
+.white-cream
+  background-color: #fff !important
+
+.chees-cream-coating
+  z-index: 99
+  position: relative
+
+  &:before
+    position: absolute
+    content: ''
+    height: 118%
+    width: 100%
+    background-color: #fff !important
+    top: -20px
+    left: 0
+    border-radius: 20px 20px 0 0
+
+.chees-cream
+  background-color: #fff !important
+
+.white-souce
+  background-color: #EEEBE8
+
+.caramel
+  background-color: #79460C
+
+.maple
+  background-color: #D18D3B
+
+.strawberry
+  background-color: #DF7684
+
+.blueberry
+  background-color: #873D88
+
+.milk-choc
+  background-color: #754D2C
+
+.create__build-view-info .create__build-wrapper label
+  padding-left: 10px !important
