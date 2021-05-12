@@ -316,23 +316,6 @@ label {
 .create__build-topping-info .create__build-wrapper:not(:first-child) {
   margin-left: 15px;
 }
-.create__build-view {
-  margin-top: 30px;
-  display: flex;
-  align-items: flex-start;
-}
-.create__build-view-form:first-child {
-  width: 210px;
-}
-.create__build-view-form:last-child {
-  margin-left: 80px;
-  width: 550px;
-}
-.create__build-view-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 .create__build-end {
   margin-top: 30px;
   display: flex;
